@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	.leftimg {
+                 float:left; /* Выравнивание по левому краю */
+                 margin: 0 10px 5px 0; /* Отступы вокруг картинки */
+              }
+<!--              .rightimg  {-->
+<!--                float: right; /* Выравнивание по правому краю  */ -->
+<!--                margin: 0 0 10px 10px; /* Отступы вокруг картинки */-->
+<!--              }-->
+	</style>
+    <title>{% block pagename %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <header>
+      <h1><img src="../static/images/abibas.png" height="130" alt="Здесь должна быть картинка" class="leftimg">
+      ОФИЦИАЛЬНЫЙ МАГАЗИН<br/>ФИРМЕННОЙ ОДЕЖДЫ И ОБУВИ</h1>
+
+      <nav>
+      <h3><a href="/">"Главная"</a>
+      <a href="/clothes/">"Одежда"</a>
+      <a href="/shoes/">"Обувь"</a>
+      <a href="/hats/">"Головные уборы"</a>
+      <a href="/accessories/">"Аксессуары"</a>
+      <a href="/about_us/">"О нас"</a></h3>
+      </nav>
+    </header>
+    <main>
+      {% block main %}{% endblock %}
+    </main>
+    <footer>
+      <h3>Телефон: 8 800 777-777-1</h3>
+    </footer>
+  </body>
+</html>

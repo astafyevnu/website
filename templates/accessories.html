@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block pagename %}Аксессуары Abibas{% endblock %}
+
+{% block main %}
+<style>
+	.img-line {
+<!--		border: 2px solid #55c5e9; /* Рамка вокруг фотографии */-->
+		padding: 15px; /* Расстояние от картинки до рамки */
+		margin-right: 10px; /* Отступ справа */
+		margin-bottom: 10px; /* Отступ снизу */
+    }
+	</style>
+<h3>Аксессуары</h3>
+        <ul>
+            <li><a> <h3> Перчатки</h3></a></li>
+            <li><a><h3> Носки</h3></a></li>
+			<li><a><h3> Очки</h3></a></li>
+            <li><a><h3> Маски</h3></a></li>
+            <li><a><h3> Средства для ухода за обувью</h3></a></li>
+            <li><a><h3> Средства для ухода за одеждой</h3></a></li>
+            <li><a><h3> Жидкости для испарителей</h3></a></li>
+        </ul>
+<p class="img-line">
+	<img src="../static/images/socks1.jpg" alt="Картинка" height="300px">
+	<img src="../static/images/socks.jpg" alt="Картинка" height="300px">
+	<img src="../static/images/socks3.jpg" alt="Картинка" height="300px">
+	<img src="../static/images/jija.jpeg" alt="Картинка" height="300px">
+    <img src="../static/images/mask.jpg" alt="Картинка" height="300px">
+	</p>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block pagename %}Обувь Abibas{% endblock %}
+
+{% block main %}
+<style>
+	.img-line {
+<!--		border: 2px solid #55c5e9; /* Рамка вокруг фотографии */-->
+		padding: 15px; /* Расстояние от картинки до рамки */
+		margin-right: 10px; /* Отступ справа */
+		margin-bottom: 10px; /* Отступ снизу */
+    }
+	</style>
+
+<h3>Обувь</h3>
+        <ul>
+            <li><a> <h3> Кроссовки</h3></a></li>
+            <li><a><h3> Кеды</h3></a></li>
+			<li><a><h3> Слипоны</h3></a></li>
+            <li><a><h3> Ботинки</h3></a></li>
+            <li><a><h3> Сланцы</h3></a></li>
+        </ul>
+<p class="img-line">
+	<img src="../static/images/tyagi.webp" alt="Картинка" height="300px">
+	<img src="../static/images/tyagi2.webp" alt="Картинка" height="300px">
+	<img src="../static/images/tyagi1.jpeg" alt="Картинка" height="300px">
+	<img src="../static/images/tyagi3.webp" alt="Картинка" height="300px">
+	</p>
+{% endblock %}

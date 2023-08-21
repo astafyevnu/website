@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block pagename %}Одежда Abibas{% endblock %}
+
+{% block main %}
+<style>
+	.img-line {
+<!--		border: 2px solid #55c5e9; /* Рамка вокруг фотографии */-->
+		padding: 15px; /* Расстояние от картинки до рамки */
+		margin-right: 10px; /* Отступ справа */
+		margin-bottom: 10px; /* Отступ снизу */
+    }
+	</style>
+
+<h3>Одежда</h3>
+        <ul>
+            <li><a> <h3> Футболки</h3></a></li>
+            <li><a><h3> Поло</h3></a></li>
+			<li><a><h3> Толстовки</h3></a></li>
+            <li><a><h3> Куртки</h3></a></li>
+            <li><a><h3> Худи</h3></a></li>
+            <li><a><h3> Рубашки</h3></a></li>
+        </ul>
+<p class="img-line">
+	<img src="../static/images/jacket2.jpg" alt="Картинка" height="300px">
+	<img src="../static/images/t-shirt.jpeg" alt="Картинка" height="300px">
+	<img src="../static/images/jacket1.webp" alt="Картинка" height="300px">
+	<img src="../static/images/jacket.jpg" alt="Картинка" height="300px">
+    <img src="../static/images/jacket3.jpg" alt="Картинка" height="300px">
+    <img src="../static/images/t-shirt1.jpg" alt="Картинка" height="300px">
+	</p>
+{% endblock %}

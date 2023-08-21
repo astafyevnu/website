@@ -1,0 +1,10 @@
+body {
+  background-color: #333;
+  background-image: url('../static/images/fon.jpg');
+}
+.wrapper {
+  width: 80%;
+  margin: 20px auto 40px auto;
+  background-color: #fff;
+  color: #333;
+}
