@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block pagename %}Обратная связь{% endblock %}
+
+{% block main %}
+<form method="post" enctype="multipart/form-data">
+    <input type="text" placeholder="Введите имя" name="name"><br><br>
+    <input type="text" placeholder="Введите почту" name="email"><br><br>
+
+    <textarea name="message" cols="30" rows="4" placeholder="Введите текст сообщения"></textarea><br><br>
+    <input type=submit value="Отправить">
+</form>
+{% endblock %}

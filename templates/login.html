@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block pagename %}Личный кабинет{% endblock %}
+
+{% block main %}
+<form method="post" enctype="multipart/form-data">
+    <input type="text" placeholder="Введите Ваш email" name="email"><br><br>
+    <input type="password" placeholder="Введите пароль" name="password"><br><br>
+
+    <input type=submit value="Войти">
+</form>
+{% endblock %}

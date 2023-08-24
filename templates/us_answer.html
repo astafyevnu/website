@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block pagename %}Обратная связь{% endblock %}
+
+{% block main %}
+<h1>{{ name }}, Ваше обращение успешно отправлено.<br>
+    Ожидайте ответа на вашу электронную почту</h1><br><br>
+<form method="post" enctype="multipart/form-data">
+    <input type=submit value="Выйти" name="quit">
+    </form>
+{% endblock %}
