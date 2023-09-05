@@ -3,10 +3,20 @@
 {% block pagename %}Личный кабинет{% endblock %}
 
 {% block main %}
-<form method="post" enctype="multipart/form-data">
-    <input type="text" placeholder="Введите Ваш email" name="email"><br><br>
-    <input type="password" placeholder="Введите пароль" name="password"><br><br>
-
-    <input type=submit value="Войти">
+<h1>Login</h1>
+<form method="POST" action="{{ url_for('login') }}">
+{{ form.csrf_token }}
+<p>
+{{ form.username.label }}<br>
+{{ form.username(size=32) }}
+</p>
+<p>
+{{ form.password.label }}<br>
+{{ form.password(size=32) }}
+</p>
+<p>
+<input type="submit" value="Login">
+</p>
 </form>
+
 {% endblock %}
